@@ -29,9 +29,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
 
+#    ro.sf.hwrotation=90 \
 # Device settings
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.hwrotation=90 \
     persist.hwc.mirroring.region=0:0:1920:1200 \
     persist.hwc.mirroring.transform=1 \
     persist.lab126.chargeprotect=1 \

@@ -82,7 +82,7 @@ on fs
     chmod 0755 /system/vendor/oprofile/oprofile-boot
     mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/system /system ro remount
     setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
-    mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata /data wait noatime nosuid nodev nomblk_io_submit,commit=20,barrier=0
+    mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/userdata /data wait noatime nodev nomblk_io_submit,commit=20,barrier=0
     mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/cache /cache wait noatime nosuid nodev nomblk_io_submit,commit=20,barrier=0
     mount ext4 /dev/block/platform/omap/omap_hsmmc.1/by-name/efs /efs wait nomblk_io_submit,commit=20,barrier=0
     setprop ro.crypto.fuse_sdcard true

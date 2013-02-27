@@ -9,7 +9,7 @@ TARGET_BOARD_OMAP_CPU := 4470
 
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/amazon/bowser-common
-TARGET_KERNEL_CONFIG := jem_android_defconfig
+TARGET_KERNEL_CONFIG := jem_phablet_defconfig
 
 # External SGX Module
 SGX_MODULES:
