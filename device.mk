@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl\
     $(DEVICE_FOLDER)/prebuilt/usr/keylayout/twl6030_pwrbutton.kl:system/usr/keylayout/twl6030_pwrbutton.kl
 
+# Ubuntu-session fix
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/ubuntu-session:/system/etc/ubuntu-session \
+
 # Fix for market app compatibility
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
