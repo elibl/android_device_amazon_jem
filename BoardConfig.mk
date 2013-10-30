@@ -22,9 +22,9 @@ TARGET_BOARD_OMAP_CPU := 4470
 -include vendor/amazon/jem/BoardConfigVendor.mk
 
 # Kernel Build
-TARGET_KERNEL_SOURCE := kernel/amazon/bowser-common
+TARGET_KERNEL_SOURCE := kernel/amazon/otter-common
 TARGET_KERNEL_CONFIG := jem_android_defconfig
-BOARD_KERNEL_CMDLINE := mem=1G console=/dev/null rootdelay=2 init=/init vmalloc=256M androidboot.console=ttyO2 androidboot.hardware=bowser
+BOARD_KERNEL_CMDLINE := mem=1G console=null vmalloc=496M rootdelay=2 androidboot.console=ttyO2 androidboot.hardware=bowser omapfb.fb_opt=-1,-1,-1,1,1920,1200
 # Uncomment for recovery build w/ stock kernel
 #BOARD_KERNEL_CMDLINE := console=ttyO2,115200n8 mem=1G vmalloc=256M init=/init androidboot.console=ttyO2 androidboot.hardware=bowser
 

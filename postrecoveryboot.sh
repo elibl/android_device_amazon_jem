@@ -10,5 +10,5 @@ echo -n 1 | dd of=/dev/block/mmcblk0boot0 bs=1 count=1 seek=4104
 dd if=/dev/zero of=/dev/block/mmcblk0boot0 bs=1 count=1 seek=4120
 
 # reset bootmsg
-dd if=/dev/zero of=/dev/block/platform/omap/omap_hsmmc.1/by-name/misc bs=1 count=31
+dd if=/dev/zero of=/dev/block/platform/omap_hsmmc.1/by-name/misc bs=1 count=31
 

@@ -31,7 +31,8 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+    $(DEVICE_FOLDER)/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
+    $(DEVICE_FOLDER)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Prebuilt /system/usr
 PRODUCT_COPY_FILES += \
@@ -64,9 +65,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # temperature sys fs node properties to be used by ThermalValidation/StressTest
 PRODUCT_PROPERTY_OVERRIDES += \
-    pcb.temp.sensor.sysfs.node=/sys/devices/platform/omap/omap_i2c.3/i2c-3/3-0070/temp1_input \
+    pcb.temp.sensor.sysfs.node=/sys/devices/platform/omap_i2c.3/i2c-3/3-0070/temp1_input \
     batt.temp.sensor.sysfs.node=/sys/class/power_supply/bq27541/temp \
-    cpu.temp.sensor.sysfs.node=/sys/devices/platform/omap/omap_temp_sensor.0/temp1_input \
+    cpu.temp.sensor.sysfs.node=/sys/devices/platform/omap_temp_sensor.0/temp1_input \
     hotspot.temp.sensor.sysfs.node=/sys/class/thermal_sensor/thermal_sensor0/device/hotspot_temp \
     charge.current.sysfs.node=/sys/class/power_supply/smb347_usb/device/charge_current
 
